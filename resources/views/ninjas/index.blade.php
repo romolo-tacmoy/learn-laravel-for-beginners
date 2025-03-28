@@ -1,8 +1,7 @@
 <x-layout>
     <h2>Currently Available Ninjas</h2>
-    <p>{{ $greeting }}</p>
 
-    <ul>
+    <ul class="mt-4">
         @foreach ($ninjas as $ninja)
             <li>
                 <x-card href="/ninjas/{{ $ninja['id'] }}" :highlight="$ninja['skill'] > 70">
